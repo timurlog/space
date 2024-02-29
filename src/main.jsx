@@ -7,6 +7,7 @@ import App from "./App.jsx";
 import Destination from "./pages/Destination/Destination.jsx";
 import Crew from "./pages/Crew/Crew.jsx";
 import Technology from "./pages/Technology/Technology.jsx";
+import Planet from "./components/Planet/Planet.jsx";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,12 @@ const router = createBrowserRouter([
   {
     path: "/destination",
     element: <Destination />,
+    children: [
+      {
+        path: "/destination/:planetId",
+        element: <Planet />,
+      },
+    ],
   },
   {
     path: "/crew",

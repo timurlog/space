@@ -22,7 +22,7 @@ export default function App() {
           </p>
         </div>
         <div className="lg:w-1/2 flex justify-center items-center">
-          <Link to={"/destination"}>
+          <Link to={"/destination/0"}>
             <div className="h-52 w-52 lg:h-80 lg:w-80 font-[bilie-eilish] bg-white transition-colors hover:bg-gray-100 text-black text-3xl leading-[30px] rounded-[50%] flex justify-center items-center tracking-widest">
               EXPLORE
             </div>

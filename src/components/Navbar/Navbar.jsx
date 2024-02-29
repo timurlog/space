@@ -54,7 +54,7 @@ export default function Navbar(props) {
                 className={`nav-list-link ${
                   props.activePage == "destination" ? "heActive" : ""
                 } `}
-                to={"/destination"}
+                to={"/destination/0"}
               >
                 01 DESTINATION
               </Link>
