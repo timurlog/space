@@ -13,7 +13,7 @@ export default function PlanetNavbar() {
                 ? "text-gray-600 uppercase tracking-wider text-sm lg:text-lg font-[comfortaa-bold]"
                 : "text-white uppercase tracking-wider text-sm lg:text-lg hover:text-gray-600 font-[comfortaa-bold]"
             }
-            to={`/destination/${index}`}
+            to={`/space/destination/${index}`}
           >
             {planet.name}
           </NavLink>

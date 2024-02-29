@@ -11,7 +11,7 @@ export default function ErrorElement() {
           maybe in the space?
         </span>
       </p>
-      <Link className="btn" to={"/"}>
+      <Link className="btn" to={"/space/"}>
         HOME
       </Link>
     </div>

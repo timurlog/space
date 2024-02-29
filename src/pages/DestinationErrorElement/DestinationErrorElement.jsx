@@ -11,7 +11,7 @@ export default function DestinationErrorElement() {
           maybe in the correct space?
         </span>
       </p>
-      <Link className="btn" to={"/destination/0"}>
+      <Link className="btn" to={"/space/destination/0"}>
         GO HERE
       </Link>
     </div>

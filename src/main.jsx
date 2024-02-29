@@ -12,27 +12,27 @@ import DestinationErrorElement from "./pages/DestinationErrorElement/Destination
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/space/",
     element: <App />,
     errorElement: <ErrorElement />,
   },
   {
-    path: "/destination",
+    path: "/space/destination",
     element: <Destination />,
     errorElement: <DestinationErrorElement />,
     children: [
       {
-        path: "/destination/:planetId",
+        path: "/space/destination/:planetId",
         element: <Planet />,
       },
     ],
   },
   {
-    path: "/crew",
+    path: "/space/crew",
     element: <Crew />,
   },
   {
-    path: "/technology",
+    path: "/space/technology",
     element: <Technology />,
   },
 ]);

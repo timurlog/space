@@ -20,7 +20,7 @@ export default function Navbar(props) {
     <header className="header">
       <nav className="header-nav">
         <div className="nav-data">
-          <Link to={"/"}>
+          <Link to={"/space/"}>
             <img className="nav-logo" src={spaceLogo} alt="space logo" />
           </Link>
         </div>
@@ -44,7 +44,7 @@ export default function Navbar(props) {
                 className={`nav-list-link ${
                   props.activePage == "home" ? "heActive" : ""
                 } `}
-                to={"/"}
+                to={"/space/"}
               >
                 00 HOME
               </Link>
@@ -54,7 +54,7 @@ export default function Navbar(props) {
                 className={`nav-list-link ${
                   props.activePage == "destination" ? "heActive" : ""
                 } `}
-                to={"/destination/0"}
+                to={"/space/destination/0"}
               >
                 01 DESTINATION
               </Link>
@@ -64,7 +64,7 @@ export default function Navbar(props) {
                 className={`nav-list-link ${
                   props.activePage == "crew" ? "heActive" : ""
                 } `}
-                to={"/crew"}
+                to={"/space/crew"}
               >
                 02 CREW
               </Link>
@@ -74,7 +74,7 @@ export default function Navbar(props) {
                 className={`nav-list-link ${
                   props.activePage == "technology" ? "heActive" : ""
                 } `}
-                to={"/technology"}
+                to={"/space/technology"}
               >
                 03 TECHNOLOGY
               </Link>
