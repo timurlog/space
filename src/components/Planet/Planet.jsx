@@ -27,7 +27,9 @@ export default function Planet() {
           <p className="uppercase font-[bilie-eilish] text-white text-8xl leading-[96px] tracking-wider">
             {planet.name}
           </p>
-          <p className="text-sm md:text-base lg:text-lg">{planet.description}</p>
+          <p className="text-sm md:text-base lg:text-lg">
+            {planet.description}
+          </p>
           <div className="h-[2px] w-full bg-gray-800"></div>
           <div className="lg:pl-[35%]">
             <p className="text-sm font-[comfortaa-bold]">EST. TRAVEL TIME</p>

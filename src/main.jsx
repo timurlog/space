@@ -12,6 +12,11 @@ import DestinationErrorElement from "./pages/DestinationErrorElement/Destination
 
 const router = createBrowserRouter([
   {
+    path: "/",
+    element: <ErrorElement />,
+    errorElement: <ErrorElement />,
+  },
+  {
     path: "/space/",
     element: <App />,
     errorElement: <ErrorElement />,
