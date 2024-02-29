@@ -1,0 +1,194 @@
+/* ########### HEADER ########### */
+.header {
+  width: 100%;
+  height: 8.7rem;
+  padding-top: 2.6rem;
+}
+.header .header-nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header-nav .nav-toggle {
+  height: 3rem;
+  width: 3rem;
+  padding-right: 50px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+.header .header-nav .nav-toggle .nav-burger,
+.header .header-nav .nav-toggle .nav-close {
+  width: max-content;
+  height: max-content;
+  cursor: pointer;
+  position: absolute;
+  font-size: 1.5rem;
+  color: #ffffff;
+  transition: opacity 0.1s, transform 0.4s;
+}
+.header .header-nav .nav-data {
+  padding-left: 50px;
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header-nav .nav-data .nav-logo {
+  height: 3rem;
+}
+.header .header-nav .nav-menu {
+  height: 100%;
+  padding-left: 60px;
+  padding-right: 120px;
+  background: rgba(255, 255, 255, 0.05);
+}
+.header .header-nav .nav-menu .nav-list {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.header .header-nav .nav-menu .nav-list .nav-list-link {
+  width: fit-content;
+  padding: 10px;
+  font-family: "comfortaa-bold";
+  color: #ffffff;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  position: relative;
+  transition: color 0.2s;
+}
+.header .header-nav .nav-menu .nav-list .nav-list-link:hover {
+  color: #989898;
+}
+.heActive {
+  width: fit-content;
+  position: relative;
+}
+.heActive::before {
+  position: absolute;
+  content: "";
+  width: calc(100% - 23px);
+  height: 3px;
+  background: #fff;
+  bottom: -29px;
+}
+.line-content {
+  height: 100%;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  height: 2px;
+  width: 100%;
+  background: #fff;
+}
+
+/* ######### RESPONSIVE ######### */
+/* ### MOBILE ### */
+@media (max-width: 576px) {
+  .header .header-nav {
+    padding: 0 20px;
+  }
+  .header .header-nav .nav-toggle {
+    display: flex;
+    padding-right: 20px;
+  }
+  .header .header-nav .nav-data {
+    padding-left: 20px;
+  }
+  .header .header-nav .nav-data .nav-logo {
+    height: 2.5rem;
+  }
+  .header .header-nav .nav-menu {
+    padding: 0 10px;
+    background: rgba(255, 255, 255, 0.05);
+    position: absolute;
+    right: 0;
+    top: -100%;
+    opacity: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 99;
+    transition: top 0.3s, opacity 0.1s;
+  }
+  .header .header-nav .nav-menu .nav-list {
+    padding-top: 11.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  .line-content {
+    width: 40%;
+  }
+  .heActive::before {
+    display: none;
+  }
+}
+/* ### DESKTOP ### */
+@media (min-width: 577px) and (max-width: 1300px) {
+  .header .header-nav .nav-toggle {
+    display: flex;
+  }
+  .header .header-nav .nav-menu {
+    padding: 0 40px;
+    background: rgba(255, 255, 255, 0.05);
+    position: absolute;
+    right: 0;
+    top: -100%;
+    opacity: 0;
+    height: 100vh;
+    width: fit-content;
+    z-index: 99;
+    transition: top 0.3s, opacity 0.1s;
+  }
+  .header .header-nav .nav-menu .nav-list {
+    padding-top: 11.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  .line-content {
+    width: 60%;
+  }
+  .heActive::before {
+    display: none;
+  }
+}
+
+@media (min-width: 1301px) and (max-width: 1600px) {
+  .line-content {
+    width: 20%;
+  }
+}
+
+.show-menu {
+  opacity: 1 !important;
+  top: 0 !important;
+}
+
+.nav-close {
+  opacity: 0;
+}
+
+.show-icon .nav-burger {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+
+.show-icon .nav-close {
+  opacity: 1;
+  transform: rotate(90deg);
+}
