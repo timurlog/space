@@ -4,7 +4,7 @@ import Navbar from "../../components/Navbar/Navbar.jsx";
 
 export default function Technology() {
   return (
-    <div className="h-screen w-full">
+    <div className="Technology h-screen w-full">
       <Navbar activePage={"technology"} />
     </div>
   );
