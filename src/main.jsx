@@ -8,6 +8,7 @@ import Destination from "./pages/Destination/Destination.jsx";
 import Crew from "./pages/Crew/Crew.jsx";
 import Technology from "./pages/Technology/Technology.jsx";
 import Planet from "./components/Planet/Planet.jsx";
+import DestinationErrorElement from "./pages/DestinationErrorElement/DestinationErrorElement.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
   {
     path: "/destination",
     element: <Destination />,
+    errorElement: <DestinationErrorElement />,
     children: [
       {
         path: "/destination/:planetId",
