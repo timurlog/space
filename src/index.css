@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "bilie-eilish";
+  src: url("./assets/fonts/billie-eilish.ttf");
+}
+
+@font-face {
+  font-family: "comfortaa-bold";
+  src: url("./assets/fonts/comfortaa-bold.ttf");
+}
+
+@font-face {
+  font-family: "comfortaa-light";
+  src: url("./assets/fonts/comfortaa-light.ttf");
+}
+
+@font-face {
+  font-family: "comfortaa-regular";
+  src: url("./assets/fonts/comfortaa-regular.ttf");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,27 +32,23 @@
 }
 
 body {
-  background-color: #FFFFFF;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  font-family: "comfortaa-regular";
 }
 
 /* ######### RESPONSIVE ######### */
 /* ### MOBILE ### */
 @media (max-width: 576px) {
-
 }
 
 /* ### TABLET ### */
 @media (min-width: 577px) and (max-width: 768px) {
-
 }
 
 /* ### DESKTOP ### */
 @media (min-width: 769px) and (max-width: 1024px) {
-
 }
 
 /* ### BIG DESKTOP ### */
 @media (min-width: 1025px) {
-
 }
