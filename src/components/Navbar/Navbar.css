@@ -97,9 +97,6 @@
 /* ######### RESPONSIVE ######### */
 /* ### MOBILE ### */
 @media (max-width: 576px) {
-  .header .header-nav {
-    padding: 0 20px;
-  }
   .header .header-nav .nav-toggle {
     display: flex;
     padding-right: 20px;
@@ -112,7 +109,7 @@
   }
   .header .header-nav .nav-menu {
     padding: 0 10px;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0.5);
     position: absolute;
     right: 0;
     top: -100%;
@@ -143,7 +140,7 @@
   }
   .header .header-nav .nav-menu {
     padding: 0 40px;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0.5);
     position: absolute;
     right: 0;
     top: -100%;

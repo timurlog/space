@@ -22,3 +22,7 @@
     background-size: cover;
   }
 }
+
+.heightPage {
+  height: calc(100vh - 15rem);
+}
