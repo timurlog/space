@@ -64,7 +64,7 @@ export default function Navbar(props) {
                 className={`nav-list-link ${
                   props.activePage == "crew" ? "heActive" : ""
                 } `}
-                to={"/space/crew"}
+                to={"/space/crew/0"}
               >
                 02 CREW
               </Link>

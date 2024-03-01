@@ -9,6 +9,7 @@ import Crew from "./pages/Crew/Crew.jsx";
 import Technology from "./pages/Technology/Technology.jsx";
 import Planet from "./components/Planet/Planet.jsx";
 import DestinationErrorElement from "./pages/DestinationErrorElement/DestinationErrorElement.jsx";
+import Person from "./components/Person/Person.jsx";
 
 const router = createBrowserRouter([
   {
@@ -35,10 +36,24 @@ const router = createBrowserRouter([
   {
     path: "/space/crew",
     element: <Crew />,
+    errorElement: <DestinationErrorElement />,
+    children: [
+      {
+        path: "/space/crew/:crewId",
+        element: <Person />,
+      },
+    ],
   },
   {
     path: "/space/technology",
     element: <Technology />,
+    errorElement: <DestinationErrorElement />,
+    children: [
+      {
+        path: "/space/technology/:technologyId",
+        element: <div>TECHNOLOGY</div>,
+      },
+    ],
   },
 ]);
 
